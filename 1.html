@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Website</title>
+<img src="C:\Users\DELL\Downloads\bbb.png" alt="college logo" 
+class="center">
+<style>
+body{
+background-color:yellow;
+}
+.center{
+display:block;
+margin-left:auto;
+margin-right:auto;
+width:20%;
+}
+</style>
+</head>
+<body>
+
+</body>
+<header>
+    <center><h1>SVCE College Canteen</h1></center>
+
+</header>
+    <h2>Menu</h2>
+    
+        <li>Burger-$80.00</li>
+        <li>Pizza-$120.00</li>
+        <li>veg roll-$40.00</li>
+        <li>sandwich-$30.00</li>
+        <li>soft drinks-$30.00</li>
+         <li>coffee-$15.00</li>
+        <!-- Add more items as needed -->
+   
+    <h2>Place Your Order</h2>
+    <form action="process_order.php" method="post">
+        <label for="item">Select Item:</label>
+        <select id="item" name="item">
+            <option value="burger">Burger</option>
+            <option value="pizza">Pizza</option>
+            <option value="s drinks">soft drinks</option>
+            <option value="coffee">coffee</option>
+            <option value="veg roll">veg roll</option>
+            <option value="sandwich">sandwich</option>
+            <!-- Add more options as needed -->
+        </select>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+        <button type="submit">Submit Order</button>
+    </form>
+<footer>
+    <p>Contact us at: svcecanteen@.com</p>
+</footer>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+</html>
